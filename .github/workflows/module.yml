@@ -10,12 +10,7 @@ jobs:
       fail-fast: false
       matrix:
         kmi:
-          - android13-5.10
-          - android13-5.15
-          - android14-5.15
-          - android14-6.1
-          - android15-6.6
-          - android16-6.12
+          - android12-5.10
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/ylarod/ddk-min:${{ matrix.kmi }}-20260313
